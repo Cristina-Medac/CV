@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
     <title>Formulario del CV</title>
 </head>
-<body>
 
-    
-    
+<body>
+    <form action="http://localhost/proceso.php" method="post">
+        <fieldset>
+            <legend><b>Datos personales</b></legend>
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Apellidos: <input type="text" name="apellidos"></p>
+            <p>Edad: <input type="text" name="edad" size="2"></p>
+            <p> Sexo: 
+            <input type="radio" name="genero"> Mujer
+            <input type="radio" name="genero"> Hombre
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Contacto</b></legend>
+            <p>Correo electrónico: <input type="text" name="correo"></p>
+            <p>Codigo postal: <input type="text" name="cp" maxlength="5" size="5"></p>
+            <p>Dirección: <input type="text" name="direccion" size="36"></p>
+            <p>Ciudad:
+            <select name="ciudad">
+            <option value="1">Almería</option>
+            <option value="2">Cádiz</option>
+            <option value="3">Córdoba</option>
+            <option value="4">Granada</option>
+            <option value="5">Huelva</option>
+            <option value="6" selected>Jaén</option>
+            <option value="7">Málaga</option>
+            <option value="8">Sevilla</option>
+            </p>
+        </select>
+        <p>Contraseña: <input type="password"></p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><b>Datos de Interés</b></legend>
+            <p>Estado civil:</p>
+            <input type="radio" name="estado">Casado
+            <input type="radio" name="estado">No casado
+            <p>Hobbies:<br>
+            <pre><input type="checkbox" name="deporte"> Deporte                <input type="checkbox" name="leer"> Leer </pre>
+            <pre><input type="checkbox" name="series"> Series                   <input type="checkbox" name="naturaleza"> Naturaleza</pre>
+            <pre><input type="checkbox" name="videojuegos"> Videojuegos         <input type="checkbox" name="musica"> Música </pre>
+            <pre><input type="checkbox" name="jardineria"> Jardinería             <input type="checkbox" name="cocina"> Cocina</pre>
+            </p>
+        </fieldset>
+        <fieldset>
+       <legend><b>Comentarios adicionales</b></legend><br>
+        <textarea name="comentario" rows="4" cols="50" placeholder="Escriba sus comentarios aqui..."></textarea></p> <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todo">
+        </fieldset>
+    </form>
+
 </body>
+
 </html>

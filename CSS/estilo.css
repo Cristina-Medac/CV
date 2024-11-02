@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(244, 238, 215);
+}
+
 pre {
     font-size: 15px;
     font-family:'Times New Roman', Times, serif;
@@ -14,4 +18,14 @@ thead {
 
 table {
     border-style:groove;
+    background-color: aliceblue;
+    
+
 }
+
+thead, th, td {
+    border: 1px solid black;
+    text-align: center;
+    }
+
+
