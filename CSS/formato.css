@@ -1,0 +1,27 @@
+header { /*la cabecera*/
+    background-color: rgb(154, 206, 216);
+    padding:10px;
+    text-align: center;
+    border: 2px solid black;
+    width: 85%;
+    margin: auto;
+}
+
+nav a { /*los liks*/
+    float:left;
+    display: block; /*esto no se para qué es*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 30px; 
+}
+
+nav a:hover { /*lo que hace cuando se pasa el ratón por encima de nav*/
+    background-color: #cfe1e6;
+    color: black;
+}
+
+nav { /*la barra de navegación*/
+    overflow:hidden;
+    background-color: #001337;
+}
+
