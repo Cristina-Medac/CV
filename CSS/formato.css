@@ -1,6 +1,26 @@
-header {
-    background-color: rgb(155, 193, 193);
-    padding: 4%;
+header { /*La cabecera */
+    background-color: rgb(15a, 206, 216);
+    padding: 10px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    width: 85%;
+    margin: auto;
+}
+
+nav a {
+    float: left;
+    display: block; /*esto no se lo que es*/
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+nav a:hover { /*Lo que hace cuando se pasa el ra´ton por encima de nav*/
+    background-color: #cfe1e6;
+    color: black;
+}
+
+nav { /*La barra de navegación*/
+    overflow: hidden;
+    background-color: #001337;
 }
