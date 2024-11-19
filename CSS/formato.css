@@ -1,5 +1,5 @@
 header { /*La cabecera */
-    background-color: rgb(15a, 206, 216);
+    background-color:rgb(155, 205, 220);
     padding: 10px;
     text-align: center;
     border: 2px solid black;
@@ -7,20 +7,23 @@ header { /*La cabecera */
     margin: auto;
 }
 
-nav a {
+nav a { /*Los links*/
     float: left;
     display: block; /*esto no se lo que es*/
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 30px;
+    padding: 17px 30px;
+    
 }
 
-nav a:hover { /*Lo que hace cuando se pasa el ra´ton por encima de nav*/
+nav a:hover { /*Lo que hace cuando se pasa el raton por encima de nav*/
     background-color: #cfe1e6;
     color: black;
 }
 
 nav { /*La barra de navegación*/
-    overflow: hidden;
+    overflow:auto;
     background-color: #001337;
+    
+    
 }
