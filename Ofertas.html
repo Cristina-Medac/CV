@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <title>Ofertas de empleo</title>
+    <style>
+    body {background-color: rgb(255, 250, 243);}
+    </style>
+</head>
+<body>
+    <form action="http://localhost/proceso.php" method="post"></form> <!--Sitio donde se "envían" los datos-->
+
+    <p>Correo electrónico: <input type="email" name="correo"></p>
+    <p> Fecha : <input type="date"> </p>
+    <p>Sueldo (12.000€ - 38.000€): 
+        <input type="range" min="12000" max="38000" step="100"> 
+    </p>
+    <p> Datos sobre la empresa: </p>
+    <textarea name="empresa" rows="4" cols="50" placeholder="Escriba aquí en qué ámbitos se mueve su empresa..."></textarea>
+
+    
+</body>
+</html>

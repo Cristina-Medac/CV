@@ -27,3 +27,18 @@ nav { /*La barra de navegación*/
     
     
 }
+
+.bloque { /*Para crear la configuración de cada columna*/
+    float:left;
+    width: 30%;
+    padding: 8%;
+    background-color: pink;
+    border: 2px solid rgb(255, 0, 166);
+}
+
+.columna::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
