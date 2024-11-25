@@ -3,42 +3,69 @@ header { /*La cabecera */
     padding: 10px;
     text-align: center;
     border: 2px solid black;
-    width: 85%;
+    width: 1390px;
     margin: auto;
 }
 
-nav a { /*Los links*/
-    float: left;
-    display: block; /*esto no se lo que es*/
+nav a { /*texto de la barra de navegación*/
+    float:left;
+    display:block;
     color: #f2f2f2;
     text-align: center;
-    padding: 17px 30px;
-    
+    padding: 10px 30px;
 }
 
-nav a:hover { /*Lo que hace cuando se pasa el raton por encima de nav*/
+nav { /*barra de navegación*/
+    overflow:hidden;
+    background-color: #001337;
+    color: white;
+}
+
+nav a:hover { /*navegación cuando se pasa por encima*/
     background-color: #cfe1e6;
     color: black;
 }
 
-nav { /*La barra de navegación*/
-    overflow:auto;
-    background-color: #001337;
-    
-    
+main {
+    padding: 2%;
+    text-align: left;
+    width: 1390px;
+    margin: auto;
 }
 
-.bloque { /*Para crear la configuración de cada columna*/
+
+.columna {
     float:left;
-    width: 30%;
-    padding: 8%;
-    background-color: pink;
-    border: 2px solid rgb(255, 0, 166);
+    width: 50%;
+    padding: 20px;
 }
 
-.columna::after {
-    content: " ";
+
+.row:after {
+    content: "";
     display: table;
     clear: both;
 }
+
+.cuerpo {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: rgb(192, 192, 192);
+    text-align: right;
+    padding: 10px;
+}
+
+.postit {
+    background-color: rgb(255, 243, 164);
+    padding: 30px;
+    margin-top: 6px;
+}
+
+
+
+
+
 
