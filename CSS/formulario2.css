@@ -14,19 +14,22 @@ body {
 }
 
 fieldset {
-    border: 2px solid #4caf50; /*borde del recuadro*/
+    border: 2px solid #9d00ff; /*borde del recuadro*/
     border-radius: 10px; /*bordes redondeados*/
     background-color: #e5d9c9; /*fondo del recuadro*/
     width: 550px;/*anchura del recuadro*/
     padding: 20px;
-   
 
 }
 
 legend {
     font-weight: bold;
     font-size: 0.6cm;
-    color: #4e0a0a; /*color del texto del legend o título*/
+    color: #230235; /*color del texto del legend o título*/
+    text-align: center;
+    display: block;
+
+   
 }
 
 input[type="submit"]:hover {
@@ -49,4 +52,12 @@ input[type="reset"]:hover {
     float:left;
     width: 50%;
     padding: 20px;
+}
+
+.nombre1 {
+    
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    
 }

@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/formulario2.css">
+    <style>
+        head, body {
+            background-image: url('img/cuaderno.jpg');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+   }
+    </style>
     <title>WORK FORM</title>
 </head>
 
 <body> <!-- CUERPO -->
     <form action="http://localhost/proceso.php" method="post">
-        <h3> FORMULARIO LABORAL</h3>
+        <h3 class="nombre1"> FORMULARIO LABORAL</h3>
         <div class="apartado">
             <fieldset>
                 <legend><b>TEAM</b></legend>
@@ -63,24 +72,11 @@
                 <input type="radio" name="experiencia">No
             </p>
             <p>Lenguajes de programación::<br>
-            <div class="apartado"></div>
-                <div class="cuadrar">
-                    <div class="columna">
-                        <input type="checkbox" name="javascript"> JavaScript
-                        <input type="checkbox" name="html"> HTML
-                        <input type="checkbox" name="python"> Python
-                        <input type="checkbox" name="sql"> SQL
-                    </div>
-                    <div class="columna">
-                        <input type="checkbox" name="java"> Java
-                        <input type="checkbox" name="csharp"> C#
-                        <input type="checkbox" name="rust"> Rust
-                        <input type="checkbox" name="php"> PHP
-                        </p>
-
-                    </div>
-                </div>
-            </div>
+                        <pre><input type="checkbox" name="javascript"> JavaScript        <input type="checkbox" name="html"> HTML</pre>
+                        <pre><input type="checkbox" name="python"> Python             <input type="checkbox" name="sql"> SQL</pre>
+                        <pre><input type="checkbox" name="java"> Java                 <input type="checkbox" name="csharp"> C#</pre>
+                        <pre><input type="checkbox" name="rust"> Rust                 <input type="checkbox" name="php"> PHP</pre>
+            </p>
         </fieldset>
 
         <p>
