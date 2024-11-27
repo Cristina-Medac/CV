@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="CSS/formato.css">
     <style>
         * {
-            width: 100%;
             box-sizing: border-box;
+            /*esto es para que las secciones y artículos queden cuadrados en sus posiciones*/
         }
+       head, body {
+        background-image: url('img/acuarela.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       }
     </style>
     <title>Sobre Mí</title>
 </head>
@@ -17,92 +23,76 @@
 <body>
     <!-- Aquí empieza la cabecera-->
     <header>
-        <h2>Más cosas sobre mí</h2>
+        <h2 class="titulo">Más cosas sobre mí</h2>
         <p>
             <a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank">CSS Webssite Layout</a>
         </p>
+        <!--Navegación-->
         <nav>
-            <a href="#perspectivas">Perspectivas laborales</a>
-            <a href="gustos">Gustos personales</a>
+            <a href="#laboral">Perspectivas laborales</a>
+            <a href="#gustos">Gustos personales</a>
         </nav>
     </header>
-
-    <!--Navegación-->
-    
-       
-    
-
 
     <!--Aquí meto el main-->
     <main>
         <!--SECCIÓN 1-->
         <section>
             <div class="postit">
-            <h3> Sección 1</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante elit,
-                iaculis eu magna in, scelerisque dignissim neque. Nulla finibus, ligula ac
-                porttitor posuere, leo ligula facilisis dui, a vulputate justo magna ut leo.
-                Etiam purus erat, tempus a nisi quis, eleifend laoreet libero. Integer consequat
-                augue ut sem faucibus, sed fringilla tortor iaculis. Nunc hendrerit, nibh et rutrum
-                molestie, quam massa condimentum dui, nec ornare nunc augue a dolor. Nunc et diam ut
-                ex placerat lobortis. Duis vehicula tristique tellus mollis mattis. Donec sit amet
-                nibh sollicitudin, aliquet diam non, aliquam lectus. Sed auctor diam at tortor blandit
-                eleifend. Ut mollis et arcu commodo interdum. Suspendisse potenti. Donec non eros
-                on ex imperdiet placerat et ut mauris.
-            </p>
-        </div>
+                <h3 id="gustos"> Sección 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante elit,
+                    iaculis eu magna in, scelerisque dignissim neque. Nulla finibus, ligula ac
+                    porttitor posuere, leo ligula facilisis dui, a vulputate justo magna ut leo.
+                    Etiam purus erat, tempus a nisi quis, eleifend laoreet libero. Integer consequat
+                    augue ut sem faucibus, sed fringilla tortor iaculis. Nunc hendrerit, nibh et rutrum
+                    molestie, quam massa condimentum dui, nec ornare nunc augue a dolor. Nunc et diam ut
+                    ex placerat lobortis. Duis vehicula tristique tellus mollis mattis. Donec sit amet
+                    nibh sollicitudin, aliquet diam non, aliquam lectus. Sed auctor diam at tortor blandit
+                    eleifend. Ut mollis et arcu commodo interdum. Suspendisse potenti. Donec non eros
+                    on ex imperdiet placerat et ut mauris.
+                </p>
+            </div>
             <!--Artículo 1-->
-            
+
             <div class="row">
                 <div class="columna">
                     <article>
+                        
                         <div class="postit">
-                        <h4>Artículo 1</h4>
-                        <p>
-                            Sed dignissim turpis dolor, id suscipit libero imperdiet vel. Nullam vel elit dictum,
-                            vehicula justo
-                            vitae, tristique nulla. Morbi malesuada varius metus, nec auctor est. In sit amet porttitor
-                            mi,
-                            bibendum malesuada dui. Ut nisl neque, consequat a leo id, vulputate molestie nunc. Proin
-                            mauris
-                            turpis, gravida non sollicitudin sed, dictum eu felis. Pellentesque nec est urna. Ut sodales
-                            mi
-                            lectus, eu placerat mi convallis id. Donec in consequat elit. Sed imperdiet blandit magna,
-                            sit amet
-                            sodales mi sagittis efficitur. Integer malesuada porttitor tellus, vitae iaculis odio
-                            molestie id.
-                            Fusce libero purus, ullamcorper ut egestas eu, gravida ut lorem. Nullam massa enim,
-                            porttitor quis
-                            mauris ac, porta fermentum orci. Cras semper lectus porta tortor fermentum, sit amet
-                            ultrices mi
-                            ornare. Fusce volutpat rutrum blandit. Mauris vulputate euismod malesuada.
-                        </p>
-                    </div>
+                            
+                            <h4>Artículo 1</h4>
+                            <p>
+                                Sed dignissim turpis dolor, id suscipit libero imperdiet vel. Nullam vel elit dictum,
+                                vehicula justo vitae, tristique nulla. Morbi malesuada varius metus, nec auctor est. In sit amet
+                                porttitor mi, bibendum malesuada dui. Ut nisl neque, consequat a leo id, vulputate molestie nunc.
+                                Proin maurit turpis, gravida non sollicitudin sed, dictum eu felis. Pellentesque nec est urna. Ut
+                                sodales mi lectus, eu placerat mi convallis id. Donec in consequat elit. Sed imperdiet blandit
+                                magna, sit amet sodales mi sagittis efficitur. 
+                            </p>
+                            <div class="foto">
+                            <img src="img/perro_de_aguas.jpg" alt="Foto del perro" width="150" height="150">
+                            </div>
+                        </div>
                     </article>
                 </div>
-
+               
                 <!--Artículo 2-->
                 <div class="columna">
                     <article>
+                      
                         <div class="postit">
-                        <h4>Artículo 2</h4>
-                        <p>
-                            In eleifend venenatis enim, a semper justo scelerisque sed. Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipiscing elit. Pellentesque sed aliquet libero, et hendrerit nulla. Morbi ornare aliquet
-                            felis
-                            vitae dignissim. Nam luctus odio eu lectus euismod pulvinar. Nam eu erat tincidunt, lacinia
-                            tortor
-                            ac, porta nisl. Cras ultricies purus in finibus aliquam. Phasellus efficitur nulla non
-                            lectus
-                            ultricies malesuada. In ullamcorper dolor in eros congue, at tempor lorem commodo. Phasellus
-                            nec sem
-                            vel erat vulputate tincidunt eget at mauris. Integer lacinia, odio id semper faucibus, ante
-                            sapien
-                            finibus massa, et mattis odio quam ac mauris.
-                        </p>
-                    </div>
+                            <h4>Artículo 2</h4>
+                            <p>
+                                In eleifend venenatis enim, a semper justo scelerisque sed. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Pellentesque sed aliquet libero, et hendrerit nulla. Morbi ornare
+                                aliquet felis vitae dignissim. Nam luctus odio eu lectus euismod pulvinar. Nam eu erat tincidunt,
+                                lacinia tortor ac, porta nisl. Cras ultricies purus in finibus aliquam. Phasellus efficitur nulla non
+                                lectus ultricies malesuada. In ullamcorper dolor in eros congue, at tempor lorem commodo.
+                                Phasellus nec sem vel erat vulputate tincidunt eget at mauris. Integer lacinia, odio id semper faucibus,
+                                ante sapien finibus massa, et mattis odio quam ac mauris.
+                            </p>
+                        </div>
                 </div>
             </div>
             </article>
@@ -111,46 +101,50 @@
         <!--SECCIÓN 2-->
         <section>
             <div class="postit">
-            <h3> Sección 2</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante elit,
-                iaculis eu magna in, scelerisque dignissim neque. Nulla finibus, ligula ac
-                porttitor posuere, leo ligula facilisis dui, a vulputate justo magna ut leo.
-                Etiam purus erat, tempus a nisi quis, eleifend laoreet libero. Integer consequat
-                augue ut sem faucibus, sed fringilla tortor iaculis. Nunc hendrerit, nibh et rutrum
-                molestie, quam massa condimentum dui, nec ornare nunc augue a dolor. Nunc et diam ut
-                ex placerat lobortis. Duis vehicula tristique tellus mollis mattis. Donec sit amet
-                nibh sollicitudin, aliquet diam non, aliquam lectus. Sed auctor diam at tortor blandit
-                eleifend. Ut mollis et arcu commodo interdum. Suspendisse potenti. Donec non eros
-                on ex imperdiet placerat et ut mauris.
-            </p>
-        </div>
+                <h3 id="laboral"> Sección 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante elit,
+                    iaculis eu magna in, scelerisque dignissim neque. Nulla finibus, ligula ac
+                    porttitor posuere, leo ligula facilisis dui, a vulputate justo magna ut leo.
+                    Etiam purus erat, tempus a nisi quis, eleifend laoreet libero. Integer consequat
+                    augue ut sem faucibus, sed fringilla tortor iaculis. Nunc hendrerit, nibh et rutrum
+                    molestie, quam massa condimentum dui, nec ornare nunc augue a dolor. Nunc et diam ut
+                    ex placerat lobortis. Duis vehicula tristique tellus mollis mattis. Donec sit amet
+                    nibh sollicitudin, aliquet diam non, aliquam lectus. Sed auctor diam at tortor blandit
+                    eleifend. Ut mollis et arcu commodo interdum. Suspendisse potenti. Donec non eros
+                    on ex imperdiet placerat et ut mauris.
+                </p>
+            </div>
             <!--Artículo 1-->
             <div class="row">
                 <div class="columna">
                     <article>
                         <div class="postit">
-                        <h4>Artículo 1</h4>
-                        <p>
-                            Sed dignissim turpis dolor, id suscipit libero imperdiet vel. Nullam vel elit dictum,
-                            vehicula justo
-                            vitae, tristique nulla. Morbi malesuada varius metus, nec auctor est. In sit amet porttitor
-                            mi,
-                            bibendum malesuada dui. Ut nisl neque, consequat a leo id, vulputate molestie nunc. Proin
-                            mauris
-                            turpis, gravida non sollicitudin sed, dictum eu felis. Pellentesque nec est urna. Ut sodales
-                            mi
-                            lectus, eu placerat mi convallis id. Donec in consequat elit. Sed imperdiet blandit magna,
-                            sit amet
-                            sodales mi sagittis efficitur. Integer malesuada porttitor tellus, vitae iaculis odio
-                            molestie id.
-                            Fusce libero purus, ullamcorper ut egestas eu, gravida ut lorem. Nullam massa enim,
-                            porttitor quis
-                            mauris ac, porta fermentum orci. Cras semper lectus porta tortor fermentum, sit amet
-                            ultrices mi
-                            ornare. Fusce volutpat rutrum blandit. Mauris vulputate euismod malesuada.
-                        </p>
-                    </div>
+                            <h4>Artículo 1</h4>
+                            <p>
+                                Sed dignissim turpis dolor, id suscipit libero imperdiet vel. Nullam vel elit dictum,
+                                vehicula justo
+                                vitae, tristique nulla. Morbi malesuada varius metus, nec auctor est. In sit amet
+                                porttitor
+                                mi,
+                                bibendum malesuada dui. Ut nisl neque, consequat a leo id, vulputate molestie nunc.
+                                Proin
+                                mauris
+                                turpis, gravida non sollicitudin sed, dictum eu felis. Pellentesque nec est urna. Ut
+                                sodales
+                                mi
+                                lectus, eu placerat mi convallis id. Donec in consequat elit. Sed imperdiet blandit
+                                magna,
+                                sit amet
+                                sodales mi sagittis efficitur. Integer malesuada porttitor tellus, vitae iaculis odio
+                                molestie id.
+                                Fusce libero purus, ullamcorper ut egestas eu, gravida ut lorem. Nullam massa enim,
+                                porttitor quis
+                                mauris ac, porta fermentum orci. Cras semper lectus porta tortor fermentum, sit amet
+                                ultrices mi
+                                ornare. Fusce volutpat rutrum blandit. Mauris vulputate euismod malesuada.
+                            </p>
+                        </div>
                     </article>
                 </div>
 
@@ -158,47 +152,45 @@
                 <div class="columna">
                     <article>
                         <div class="postit">
-                        <h4>Artículo 2</h4>
-                        <p>
-                            In eleifend venenatis enim, a semper justo scelerisque sed. Lorem ipsum dolor sit amet,
-                            consectetur
-                            adipiscing elit. Pellentesque sed aliquet libero, et hendrerit nulla. Morbi ornare aliquet
-                            felis
-                            vitae dignissim. Nam luctus odio eu lectus euismod pulvinar. Nam eu erat tincidunt, lacinia
-                            tortor
-                            ac, porta nisl. Cras ultricies purus in finibus aliquam. Phasellus efficitur nulla non
-                            lectus
-                            ultricies malesuada. In ullamcorper dolor in eros congue, at tempor lorem commodo. Phasellus
-                            nec sem
-                            vel erat vulputate tincidunt eget at mauris. Integer lacinia, odio id semper faucibus, ante
-                            sapien
-                            finibus massa, et mattis odio quam ac mauris.
-                        </p>
-                    </div>
+                            <h4>Artículo 2</h4>
+                            <p>
+                                In eleifend venenatis enim, a semper justo scelerisque sed. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Pellentesque sed aliquet libero, et hendrerit nulla. Morbi ornare
+                                aliquet felis vitae dignissim. Nam luctus odio eu lectus euismod pulvinar. Nam eu erat tincidunt,
+                                lacinia tortor ac, porta nisl. Cras ultricies purus in finibus aliquam. Phasellus efficitur nulla non
+                                lectus ultricies malesuada.
+
+                            </p>
+                            <div class="foto">
+                            <img src="img/casa.jpg" alt="Casa de campo" width="207" height="107">
+                            </div>
+                            
+                        </div>
                 </div>
             </div>
             </article>
         </section>
 
+       
+
+
+
     </main>
     <!--salgo del main-->
     <!--meto el pie-->
-   
+
     <footer>
         <h5> Avisos legales</h5>
+        <p>
+            Pellentesque sed aliquet libero, et hendrerit nulla. Morbi ornare aliquet felis vitae dignissim. Nam luctus
+            odio eu lectus euismod pulvinar. Nam eu erat tincidunt, lacinia tortor ac, porta nisl. Cras ultricies purus
+            in finibus aliquam. Phasellus efficitur nulla non lectus ultricies malesuada. In ullamcorper dolor in eros
+            congue, at tempor lorem commodo.
+        </p>
     </footer>
+
+
     
-
-    <a name="gustos"></a>
-    <h3> Mi perro </h3>
-    <p> Tengo un perro de aguas de 6 años llamado Murphy.</p>
-    <p>Le gusta el parque, la pelota y buscar pañuelos.</p>
-
-    <img src="img/perro_de_aguas.jpg" alt="Foto del perro" width="150" height="150">
-
-    <p>Me gustaría poder vivir en una casa en el campo. Algo así como esta: </p>
-
-    <img src="img/casa.jpg" alt="Casa de campo" width="250" height="150">
 
 
 
